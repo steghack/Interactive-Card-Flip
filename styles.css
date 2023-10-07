@@ -1,0 +1,207 @@
+/* Reset default styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Global styles */
+body {
+    background-color: bisque;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card {  
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    border-radius: 20px;
+    /* Applying the animation to the cards */
+    animation: twist 2s linear infinite;
+}
+.card:hover {
+    animation: none;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    transform: rotateY(0deg); /* Initialize to front side */
+}
+
+.card:hover .card-img {
+    transform: rotateY(180deg);
+}
+
+/* Front and back of the card */
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+/* Customize card front and back styles as needed */
+.card-front {
+    background-color: #57ebad;
+}
+
+.card-front img {
+    width: 160px;
+    height: 160px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.img-top,
+.img-bottom {
+    height: 20px;
+}
+
+.card-back {
+    background-color: #2cb874;
+    color: #fff;
+    transform: rotateY(180deg);
+    padding: 20px 5px 5px 5px;
+}
+
+.card-front h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-front p {
+    font-size: 18px;
+}
+
+.card-back p {
+    font-size: 13px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.card-back img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    object-fit: cover;
+}
+
+.strong {
+    text-decoration: underline;
+}
+
+/* Blaziken fire styles */
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+.fire {
+    font-size: large;
+    text-shadow: 0 0 5px #ff3700, 0 0 15px #ff3700, 0 0 20px #ff3700, 0 0 40px #ff3700, 0 0 60px #f69f26, 0 0 10px #a22525, 0 0 98px #f69f26;
+        color: #fff6a9;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+}
+
+.water {
+    font-size: large;
+    text-shadow: 0 0 5px #2331e9, 0 0 15px #2331e9, 0 0 20px #2331e9, 0 0 40px #2331e9, 0 0 60px #00fbff, 0 0 10px #288ec1, 0 0 98px #00fbff;
+        color: #fff6a9;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+}
+
+.fairy {
+    font-size: large;
+    text-shadow: 0 0 5px #e613e6, 0 0 15px #e613e6, 0 0 20px #e613e6, 0 0 40px #e613e6, 0 0 60px #f7b4f7, 0 0 10px #9b499b, 0 0 98px #f7b4f7;
+        color: #fff6a9;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+}
+
+.grass {
+    font-size: large;
+    text-shadow: 0 0 5px #209e07, 0 0 15px #036f1a, 0 0 20px #036f1a, 0 0 40px #036f1a, 0 0 60px #94f6aa, 0 0 10px #2f703d, 0 0 98px #94f6aa;
+        color: #daf494;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+}
+
+.bird {
+    font-size: large;
+    text-shadow: 0 0 5px #0205c8, 0 0 15px #2edaf4, 0 0 20px #f20404, 0 0 40px #2edaf4, 0 0 60px #0914f4, 0 0 10px #fa0505, 0 0 98px #0914f4;
+        color: #daf494;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+}
+
+.ghost {
+    font-size: large;
+    text-shadow: 0 0 5px #3bf227, 0 0 15px #036f1a, 0 0 20px #036f1a, 0 0 40px #036f1a, 0 0 60px #9602f1, 0 0 10px #9602f1, 0 0 98px #9602f1;
+        color: #e2ebeb;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+}
+
+.poison {
+    font-size: large;
+    text-shadow: 0 0 5px #300142, 0 0 15px #300142, 0 0 20px #300142, 0 0 40px #300142, 0 0 60px #da93f6, 0 0 10px #622c78, 0 0 98px #da93f6;
+        color: #fff6a9;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+}
+
+.dragon {
+    font-size: large;
+    text-shadow: 0 0 5px #f10619, 0 0 15px #f10619, 0 0 20px #f10619, 0 0 40px #f10619, 0 0 60px #f69398, 0 0 10px #622c78, 0 0 98px #f69398;
+        color: #ffe5a9;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+}
+
+.electric {
+    font-size: large;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+        color: #fff6a9;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+}
+
+.psychic {
+    font-size: large;
+    text-shadow: 0 0 5px #5d0480, 0 0 15px #5d0480, 0 0 20px #5d0480, 0 0 40px #5d0480, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+        color: #fbc6f4;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+}
+
+@keyframes twist {
+    0% {
+    transform: rotate(0deg);
+    }
+    25% {
+    transform: rotate(15deg);
+    }
+    50% {
+    transform: rotate(0deg);
+    }
+    75% {
+    transform: rotate(-15deg);
+    }
+    100% {
+    transform: rotate(0deg);
+    }
+}
+  
